@@ -1,1 +1,1 @@
-# SBCIR
+# Sketch2Word
