@@ -1,9 +1,290 @@
 <!DOCTYPE html>
 <html>
 
-<body>
+<head>
+   <style>
+      td,
+      th {
+         border: 0px solid black;
+      }
 
-<h1>Coming soon...</h1>
+      img {
+         padding: 5px;
+      }
+   </style>
+   <title>You'll Never Walk Alone: A Sketch and Text Duet for Fine-Grained Image Retrieval</title>
 
-</body>
+   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+   <link rel="stylesheet" href="./static/css/bulma.min.css">
+   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+   <link rel="stylesheet" href="./static/css/index.css">
+   <link rel="icon" href="./static/images/favicon.svg">
+   <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
+   <link rel="stylesheet" href="css/app.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script defer src="./static/js/fontawesome.all.min.js"></script>
+   <script src="./static/js/bulma-carousel.min.js"></script>
+   <script src="./static/js/bulma-slider.min.js"></script>
+   <script src="./static/js/index.js"></script>
+</head>
+
+<section class="hero">
+   <div class="hero-body">
+      <div class="container is-max-desktop">
+         <div class="columns is-centered">
+            <div class="column has-text-centered">
+               <h1 class="title is-1 publication-title" , style="color:purple;">You'll Never Walk Alone:</h1>
+               <h1 class="title is-4 publication-title">A Sketch and Text Duet for Fine-Grained Image Retrieval</h1>
+               <div class="is-size-5 publication-authors">
+                  <span class="author-block">
+                     <a href="https://subhadeepkoley.github.io/">Subhadeep Koley</a><sup>1,2</sup>,</span>
+                  <span class="author-block">
+                     <a href="https://ayankumarbhunia.github.io/">Ayan Kumar Bhunia</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                     <a href="https://aneeshan95.github.io/">Aneeshan Sain</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                     <a href="http://www.pinakinathc.me/">Pinaki Nath Chowdhury</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                     <a href="https://www.surrey.ac.uk/people/tao-xiang">Tao
+                        Xiang</a><sup>1,2</sup>,</span>
+                  <span class="author-block">
+                     <a href="https://www.surrey.ac.uk/people/yi-zhe-song">Yi-Zhe Song</a><sup>1,2</sup></span>
+                  </span>
+               </div>
+               <div class="is-size-5 publication-authors">
+                  <span class="author-block"><sup>1</sup>SketchX, CVSSP, University of Surrey, United Kingdom</span>
+                  <span class="author-block"><sup>2</sup>iFlyTek-Surrey Joint Research Centre on Artifiial
+                     Intelligence</span>
+               </div>
+               <!--     <div class="column has-text-centered">
+                     <a href="as">ICLR 2023</a>
+                     </span>
+                     </div> -->
+               <div class="column has-text-centered">
+                  <div class="publication-links">
+                     <!-- PDF Link. -->
+                     <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2403.07222"
+                           class="external-link button is-normal is-rounded is-dark">
+                           <span class="icon">
+                              <i class="fas fa-file-pdf"></i>
+                           </span>
+                           <span>Paper (PDF)</span>
+                        </a>
+                     </span>
+                     <span class="link-block">
+                        <a href="https://arxiv.org/abs/2403.07222"
+                           class="external-link button is-normal is-rounded is-dark">
+                           <span class="icon">
+                              <i class="ai ai-arxiv"></i>
+                           </span>
+                           <span>arXiv</span>
+                        </a>
+                     </span>
+                     <!-- Video Link. -->
+                     <span class="link-block">
+                        <a href="" class="external-link button is-normal is-rounded is-dark">
+                           <span class="icon">
+                              <i class="fab fa-youtube"></i>
+                           </span>
+                           <span>Video (YouTube)</span>
+                        </a>
+                     </span>
+
+                     <!-- Dataset Link. -->
+                     <span class="link-block">
+                        <a href="" class="external-link button is-normal is-rounded is-dark">
+                           <span class="icon">
+                              <i class="far fa-images"></i>
+                           </span>
+                           <span>Poster</span>
+                        </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="hero teaser">
+   <div class="container is-max-desktop">
+      <div class="hero-body">
+         <img class="round" style="width:1500px" src="./static/images/teaser.png" />
+         <h2 class="subtitle has-text-centered">
+            <span class="dnerf"></span> (a) Photos retrieved by our method, depicting precise control over both shape
+            and appearance. (b) Unlike baseline sketch+text
+            composed retrieval framework, our method seamlessly composes the structural and contextual cues of sketch
+            and text queries respectively. (c) With a fixed sketch query, our method retrieves different images for
+            different textual descriptions and vice-versa, depicting the
+            complementarity of sketch and text modalities in sketch+text-based composed image retrieval. For a fixed
+            sketch, the visual attributes
+            from different textual descriptions are visibly reflected in the retrieved images while maintaining shape
+            consistency. Similarly, fixing the
+            attributes provided via text, shapes of retrieved images change corresponding to different sketch queries.
+
+         </h2>
+      </div>
+   </div>
+</section>
+
+<section class="section">
+   <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+         <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+               Two primary input modalities prevail in image retrieval: sketch and text. While text is widely used for
+               inter-category retrieval tasks, sketches have been established as the sole preferred modality for
+               fine-grained image retrieval due to their ability to capture intricate visual details. In this paper, we
+               question the reliance on sketches alone for fine-grained image retrieval by simultaneously exploring the
+               fine-grained representation capabilities of both sketch and text, orchestrating a duet between the two.
+               The end result enables precise retrievals previously unattainable, allowing users to pose ever-finer
+               queries and incorporate attributes like colour and contextual cues from text. For this purpose, we
+               introduce a novel compositionality framework, effectively combining sketches and text using pre-trained
+               CLIP models, while eliminating the need for extensive fine-grained textual descriptions. Last but not
+               least, our system extends to novel applications in composed image retrieval, domain attribute transfer,
+               and fine-grained generation, providing solutions for various real-world scenarios.
+               </p>
+            </div>
+         </div>
+      </div>
+
+      <!-- <section class="hero teaser">
+         <div class="container is-max-desktop">
+            <div class="hero-body">
+               <iframe width="720" height="480" src="https://www.youtube.com/embed/k7xFbELpnv4?">
+               </iframe>
+               <h2 class="subtitle has-text-centered">
+                  <span class="dnerf"></span>
+               </h2>
+            </div>
+         </div>
+      </section> -->
+
+      <!--/ Abstract. -->
+      <!-- Paper video. -->
+ 
+      <section class="section">
+         <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+               <div class="column is-four-fifths">
+                  <h2 class="title is-3">Architecture</h2>
+                  <div class="content has-text-justified">
+                     </h2>
+                     <center>
+                        <img src="./static/images/arch.png" alt="" border=0 height=300 width=1500></img></ </center>
+                        <h5 class="subtitle has-text-centered">
+
+                        </h5 &nbsp; </div>
+                  </div>
+               </div>
+      </section>
+      <section class="hero">
+         <div class="hero-body">
+            <div class="container is-max-desktop">
+               <!-- Abstract. -->
+               <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+                     <h2 class="title is-3">Results</h2>
+                     <div class="content has-text-justified">
+                        <center>
+                           <img src="static/images/qual_1.png" border=0 height=200 width=1000 />
+                        </center>
+                        <h5 class="subtitle has-text-centered">
+                           Top-5 fine-grained retrieval result comparison on ShoeV2/ChairV2. GT photos are green-bordered.
+                           <br>
+                           <br>
+                           <center>
+                              <img src="static/images/qual_2.png" border=0 height=150 width=1000 />
+                           </center>
+                           <h5 class="subtitle has-text-centered">
+                              Qualitative results for sketch+text composed fine-grained generation with pre-trained StyleGAN2 models.
+
+                              <br>
+                              <br>
+                              <center>
+                                 <img src="static/images/qual_3.png" border=0 height=400 width=1000 />
+                              </center>
+                              <h5 class="subtitle has-text-centered">
+                                 Qualitative result for object sketch-based scene image retrieval on FS-COCO. GT photos are green-bordered.
+                                 <br>
+                                 <br>
+                                 <center>
+                                    <img src="static/images/qual_4.png" border=0 height=300 width=1000 />
+                                 </center>
+                                 <h5 class="subtitle has-text-centered">
+                                    Top-3 domain attribute transfer results comparison on ImageNet-R. GT photos are green-bordered.
+                                    <br>
+                                    <br>
+                                    <center>
+                                       <img src="static/images/qual_5.png" border=0 height=300 width=500 />
+                                    </center>
+                                    <h5 class="subtitle has-text-centered">
+                                       Qualitative comparison with baselines for sketch+text
+                                       composed fashion image retrieval on FashionIQ. GT photos
+                                       are green-bordered. Notably, even though the images retrieved by
+                                       B-Sketch+Text are mostly of the same shape as the query sketch,
+                                       they lack the desired appearance given by textual description.
+                                       <br>
+                                       <br>
+                                       <center>
+                                          <img src="static/images/tsne.png" border=0 height=600 width=1000 />
+                                       </center>
+                                       <h5 class="subtitle has-text-centered">
+                                          t-SNE plots showing the feature distances for text-based,
+                                          sketch-based, and composed retrieval. Compared to sketch/text-based retrieval, combining sketch and text pushes the composed
+                                          embedding closer to the ground truth photo in the latent manifold.
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <section class="section" id="BibTeX">
+               <div class="container is-max-desktop content">
+                  <h2 class="title">BibTeX</h2>
+                  <pre><code>@inproceedings{koley2024handle,
+title={{You'll Never Walk Alone: A Sketch and Text Duet for Fine-Grained Image Retrieval}},
+author={Koley, Subhadeep and Bhunia, Ayan Kumar and Sain, Aneeshan and Chowdhury, Pinaki Nath and Xiang, Tao and Song, Yi-Zhe},
+booktitle={CVPR},
+year={2024}
+}</code></pre>
+               </div>
+            </section>
+            <script>
+               const viewers = document.querySelectorAll(".image-compare");
+               viewers.forEach((element) => {
+                  let view = new ImageCompare(element, {
+                     hoverStart: true,
+                     addCircle: true
+                  }).mount();
+               });
+
+               $(document).ready(function () {
+                  var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
+                     lineNumbers: false,
+                     lineWrapping: true,
+                     readOnly: true
+                  });
+                  $(function () {
+                     $('[data-toggle="tooltip"]').tooltip()
+                  })
+               });
+            </script>
+            <br>
+
+            <p style="text-align:center"> <img
+                  src="https://badges.toozhao.com/badges/01HTTX9JEB8JTHKRX2V8EBDBXF/green.svg" /> </a></p>
+
+            <p style="text-align:center"> Copyright: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC
+                  BY-NC-SA 4.0</a> © Subhadeep Koley | Last updated: 07 April 2024 | Good artists <a
+                  href="https://nerfies.github.io/"> copy</a>, great artists steal.</a></p>
+            </body>
+
 </html>
