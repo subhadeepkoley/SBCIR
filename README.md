@@ -1,4 +1,4 @@
-# Official repository of **You'll Never Walk Alone: A Sketch and Text Duet for Fine-Grained Image Retrieval**
+# You'll Never Walk Alone: A Sketch and Text Duet for Fine-Grained Image Retrieval
 
 Accepted in **CVPR 2024**
 
